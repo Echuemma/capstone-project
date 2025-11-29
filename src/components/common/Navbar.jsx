@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { ChevronDown, Menu, X } from 'lucide-react';
+import Link from 'next/link';
 
 export default function ToulangNavbar() {
   const [activeDropdown, setActiveDropdown] = useState(null);
@@ -28,13 +29,13 @@ export default function ToulangNavbar() {
 
         <ul className="hidden lg:flex gap-10 items-center">
           <li className="relative group">
-            <a 
+            <Link 
               href="/" 
               className="text-gray-700 font-medium text-sm tracking-wider uppercase hover:text-gray-900 transition-colors pb-1 block"
             >
               HOME
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gray-700 group-hover:w-full transition-all duration-300 ease-out"></span>
-            </a>
+            </Link>
           </li>
 {/*           
           <li className="relative">
@@ -52,9 +53,9 @@ export default function ToulangNavbar() {
             
             {activeDropdown === 'page' && (
               <div className="absolute top-full mt-2 bg-white shadow-lg rounded-md py-2 min-w-[180px] z-50">
-                <a href="#page1" className="block px-5 py-2.5 text-sm text-gray-700 hover:bg-gray-100 transition-colors">Page 1</a>
-                <a href="#page2" className="block px-5 py-2.5 text-sm text-gray-700 hover:bg-gray-100 transition-colors">Page 2</a>
-                <a href="#page3" className="block px-5 py-2.5 text-sm text-gray-700 hover:bg-gray-100 transition-colors">Page 3</a>
+                <Link href="#page1" className="block px-5 py-2.5 text-sm text-gray-700 hover:bg-gray-100 transition-colors">Page 1</Link>
+                <Link href="#page2" className="block px-5 py-2.5 text-sm text-gray-700 hover:bg-gray-100 transition-colors">Page 2</Link>
+                <Link href="#page3" className="block px-5 py-2.5 text-sm text-gray-700 hover:bg-gray-100 transition-colors">Page 3</Link>
               </div>
             )}
           </li> */}
@@ -74,9 +75,9 @@ export default function ToulangNavbar() {
             
             {activeDropdown === 'blog' && (
               <div className="absolute top-full mt-2 bg-white shadow-lg rounded-md py-2 min-w-[180px] z-50">
-                <a href="#latest" className="block px-5 py-2.5 text-sm text-gray-700 hover:bg-gray-100 transition-colors">Latest Posts</a>
-                <a href="#categories" className="block px-5 py-2.5 text-sm text-gray-700 hover:bg-gray-100 transition-colors">Categories</a>
-                <a href="#archive" className="block px-5 py-2.5 text-sm text-gray-700 hover:bg-gray-100 transition-colors">Archive</a>
+                <Link href="#latest" className="block px-5 py-2.5 text-sm text-gray-700 hover:bg-gray-100 transition-colors">Latest Posts</Link>
+                <Link href="#categories" className="block px-5 py-2.5 text-sm text-gray-700 hover:bg-gray-100 transition-colors">Categories</Link>
+                <Link href="#archive" className="block px-5 py-2.5 text-sm text-gray-700 hover:bg-gray-100 transition-colors">Archive</Link>
               </div>
             )}
           </li> */}
@@ -84,42 +85,42 @@ export default function ToulangNavbar() {
        
 
             <li className="relative group">
-            <a 
+            <Link 
               href="/contact" 
               className="text-gray-700 font-medium text-sm tracking-wider uppercase hover:text-gray-900 transition-colors pb-1 block"
             >
               CONTACT
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gray-700 group-hover:w-full transition-all duration-300 ease-out"></span>
-            </a>
+            </Link>
           </li>
 
                <li className="relative group">
-            <a 
+            <Link 
               href="/about-us" 
               className="text-gray-700 font-medium text-sm tracking-wider uppercase hover:text-gray-900 transition-colors pb-1 block"
             >
               ABOUT US
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gray-700 group-hover:w-full transition-all duration-300 ease-out"></span>
-            </a>
+            </Link>
           </li>
 
              <li className="relative group">
-            <a 
+            <Link 
               href="/login" 
               className="text-gray-700 font-medium text-sm tracking-wider uppercase hover:text-gray-900 transition-colors pb-1 block"
             >
               LOGIN
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gray-700 group-hover:w-full transition-all duration-300 ease-out"></span>
-            </a>
+            </Link>
           </li>
           
           <li>
-            <a 
+            <Link 
               href="/register" 
               className="bg-gray-700 text-white px-6 py-2.5 rounded-md font-medium text-sm tracking-wider uppercase hover:bg-gray-800 transition-all hover:shadow-md"
             >
               REGISTER
-            </a>
+            </Link>
           </li>
         </ul>
 
@@ -142,13 +143,13 @@ export default function ToulangNavbar() {
         <div className="pt-24 px-6 pb-6 overflow-y-auto h-full">
           <ul className="space-y-1">
             <li>
-              <a 
+              <Link 
                 href="#home" 
                 onClick={closeMobileMenu}
                 className="block py-3 px-4 text-gray-700 font-medium text-base tracking-wider uppercase hover:bg-white/50 rounded-md transition-colors"
               >
                 HOME
-              </a>
+              </Link>
             </li>
             
             <li>
@@ -165,27 +166,27 @@ export default function ToulangNavbar() {
               
               {activeDropdown === 'page' && (
                 <div className="mt-1 ml-4 space-y-1">
-                  <a 
+                  <Link 
                     href="#page1" 
                     onClick={closeMobileMenu}
                     className="block py-2 px-4 text-sm text-gray-600 hover:bg-white/50 rounded-md transition-colors"
                   >
                     Page 1
-                  </a>
-                  <a 
+                  </Link>
+                  <Link 
                     href="#page2" 
                     onClick={closeMobileMenu}
                     className="block py-2 px-4 text-sm text-gray-600 hover:bg-white/50 rounded-md transition-colors"
                   >
                     Page 2
-                  </a>
-                  <a 
+                  </Link>
+                  <Link 
                     href="#page3" 
                     onClick={closeMobileMenu}
                     className="block py-2 px-4 text-sm text-gray-600 hover:bg-white/50 rounded-md transition-colors"
                   >
                     Page 3
-                  </a>
+                  </Link>
                 </div>
               )}
             </li>
@@ -204,49 +205,49 @@ export default function ToulangNavbar() {
               
               {activeDropdown === 'blog' && (
                 <div className="mt-1 ml-4 space-y-1">
-                  <a 
+                  <Link 
                     href="#latest" 
                     onClick={closeMobileMenu}
                     className="block py-2 px-4 text-sm text-gray-600 hover:bg-white/50 rounded-md transition-colors"
                   >
                     Latest Posts
-                  </a>
-                  <a 
+                  </Link>
+                  <Link 
                     href="#categories" 
                     onClick={closeMobileMenu}
                     className="block py-2 px-4 text-sm text-gray-600 hover:bg-white/50 rounded-md transition-colors"
                   >
                     Categories
-                  </a>
-                  <a 
+                  </Link>
+                  <Link 
                     href="#archive" 
                     onClick={closeMobileMenu}
                     className="block py-2 px-4 text-sm text-gray-600 hover:bg-white/50 rounded-md transition-colors"
                   >
                     Archive
-                  </a>
+                  </Link>
                 </div>
               )}
             </li>
             
             <li>
-              <a 
+              <Link 
                 href="/login" 
                 onClick={closeMobileMenu}
                 className="block py-3 px-4 text-gray-700 font-medium text-base tracking-wider uppercase hover:bg-white/50 rounded-md transition-colors"
               >
                 LOGIN
-              </a>
+              </Link>
             </li>
             
             <li className="pt-4">
-              <a 
+              <Link 
                 href="/register" 
                 onClick={closeMobileMenu}
                 className="block text-center bg-gray-700 text-white px-6 py-3 rounded-md font-medium text-base tracking-wider uppercase hover:bg-gray-800 transition-colors"
               >
                 REGISTER
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
