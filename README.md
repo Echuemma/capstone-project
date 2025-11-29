@@ -523,10 +523,11 @@ This project is part of a capstone project. All rights reserved.
 
 ## Acknowledgments
 
-- Team: Dr. Sarah Mitchell (CMO), Alex Chen (Head of Product), Maria Garcia (Lead Nutritionist), Echu Emmanuel (CTO)
-- Founded: 2020
-- Users: 50,000+ active users worldwide
-- Satisfaction Rate: 95%
+- Team: Echu Emmanuel (CTO)
+<!-- - Team: Dr. Sarah Mitchell (CMO), Alex Chen (Head of Product), Maria Garcia (Lead Nutritionist), Echu Emmanuel (CTO) -->
+- Founded: 2025
+- Users: Not certain
+- Satisfaction Rate: 95%(posibility)
 
 ---
 

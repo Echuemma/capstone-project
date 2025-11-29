@@ -1,4 +1,3 @@
-// src/data/equipment.js
 export const equipmentTypes = [
   'all', 
   'Bodyweight', 

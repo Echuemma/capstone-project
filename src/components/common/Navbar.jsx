@@ -143,7 +143,7 @@ export default function ToulangNavbar() {
           <ul className="space-y-1">
             <li>
               <Link 
-                href="#home" 
+                to="/" 
                 onClick={closeMobileMenu}
                 className="block py-3 px-4 text-gray-700 font-medium text-base tracking-wider uppercase hover:bg-white/50 rounded-md transition-colors"
               >
@@ -151,7 +151,7 @@ export default function ToulangNavbar() {
               </Link>
             </li>
             
-            <li>
+            {/* <li>
               <button 
                 onClick={() => toggleDropdown('page')}
                 className="w-full flex items-center justify-between py-3 px-4 text-gray-700 font-medium text-base tracking-wider uppercase hover:bg-white/50 rounded-md transition-colors"
@@ -228,7 +228,27 @@ export default function ToulangNavbar() {
                 </div>
               )}
             </li>
-            
+             */}
+
+             <li className="relative group">
+            <Link to="/contact" 
+              className="text-gray-700 font-medium text-sm tracking-wider uppercase hover:text-gray-900 transition-colors pb-1 block"
+            >
+              CONTACT
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gray-700 group-hover:w-full transition-all duration-300 ease-out"></span>
+            </Link>
+          </li>
+
+               <li className="relative group">
+            <Link 
+              to="/about-us" 
+              className="text-gray-700 font-medium text-sm tracking-wider uppercase hover:text-gray-900 transition-colors pb-1 block"
+            >
+              ABOUT US
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gray-700 group-hover:w-full transition-all duration-300 ease-out"></span>
+            </Link>
+          </li>
+
             <li>
               <Link 
                 to="/login" 

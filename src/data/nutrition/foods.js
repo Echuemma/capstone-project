@@ -1,5 +1,3 @@
-// src/data/nutrition/foods.js
-
 export const popularFoods = [
   { 
     id: 1, 

@@ -1,8 +1,3 @@
-// src/data/nutrition/meals.js
-
-// --------------------------------------
-// Today’s meals (initial data)
-// --------------------------------------
 export const initialMeals = {
   breakfast: [
     {

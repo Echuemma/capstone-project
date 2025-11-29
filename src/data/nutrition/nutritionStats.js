@@ -1,11 +1,9 @@
-// src/data/nutrition/nutritionStats.js
-
 export const dailyGoals = {
   calories: 2200,
   protein: 165,
   carbs: 275,
   fats: 73,
-  water: 8 // glasses
+  water: 8 
 };
 
 export const initialDailyStats = {
@@ -50,14 +48,12 @@ export const macroDistribution = [
   }
 ];
 
-// Weekly macro trends
 export const weeklyMacroTrends = [
   { name: 'Protein', current: 148, target: 165, color: 'blue', trend: '+5%' },
   { name: 'Carbs', current: 195, target: 275, color: 'green', trend: '-2%' },
   { name: 'Fats', current: 65, target: 73, color: 'yellow', trend: '+3%' }
 ];
 
-// Nutrition score breakdown
 export const nutritionScore = {
   total: 87,
   balance: 92,
@@ -65,7 +61,6 @@ export const nutritionScore = {
   variety: 84
 };
 
-// Helper function to calculate macro percentages
 export const calculateMacroPercentages = (protein, carbs, fats) => {
   const proteinCals = protein * 4;
   const carbsCals = carbs * 4;

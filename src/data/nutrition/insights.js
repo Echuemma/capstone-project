@@ -1,4 +1,3 @@
-// src/data/nutrition/insights.js
 import { Award, Target, TrendingUp } from 'lucide-react';
 
 export const nutritionInsights = [
@@ -89,7 +88,6 @@ export const generateInsights = (currentStats, goals) => {
     });
   }
   
-  // Balance insight (if all macros are within 10% of target)
   const carbsPercentage = (currentStats.carbs / goals.carbs) * 100;
   const fatsPercentage = (currentStats.fats / goals.fats) * 100;
   
@@ -108,5 +106,5 @@ export const generateInsights = (currentStats, goals) => {
     });
   }
   
-  return insights.slice(0, 3); // Return top 3 insights
+  return insights.slice(0, 3); 
 };
