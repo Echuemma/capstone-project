@@ -30,7 +30,7 @@ export default function ToulangNavbar() {
         <ul className="hidden lg:flex gap-10 items-center">
           <li className="relative group">
             <Link 
-              href="/" 
+              to="/" 
               className="text-gray-700 font-medium text-sm tracking-wider uppercase hover:text-gray-900 transition-colors pb-1 block"
             >
               HOME
@@ -85,8 +85,7 @@ export default function ToulangNavbar() {
        
 
             <li className="relative group">
-            <Link 
-              href="/contact" 
+            <Link to="/contact" 
               className="text-gray-700 font-medium text-sm tracking-wider uppercase hover:text-gray-900 transition-colors pb-1 block"
             >
               CONTACT
@@ -96,7 +95,7 @@ export default function ToulangNavbar() {
 
                <li className="relative group">
             <Link 
-              href="/about-us" 
+              to="/about-us" 
               className="text-gray-700 font-medium text-sm tracking-wider uppercase hover:text-gray-900 transition-colors pb-1 block"
             >
               ABOUT US
@@ -106,7 +105,7 @@ export default function ToulangNavbar() {
 
              <li className="relative group">
             <Link 
-              href="/login" 
+              to="/login" 
               className="text-gray-700 font-medium text-sm tracking-wider uppercase hover:text-gray-900 transition-colors pb-1 block"
             >
               LOGIN
@@ -116,7 +115,7 @@ export default function ToulangNavbar() {
           
           <li>
             <Link 
-              href="/register" 
+              to="/register" 
               className="bg-gray-700 text-white px-6 py-2.5 rounded-md font-medium text-sm tracking-wider uppercase hover:bg-gray-800 transition-all hover:shadow-md"
             >
               REGISTER
@@ -167,21 +166,21 @@ export default function ToulangNavbar() {
               {activeDropdown === 'page' && (
                 <div className="mt-1 ml-4 space-y-1">
                   <Link 
-                    href="#page1" 
+                    to="#page1" 
                     onClick={closeMobileMenu}
                     className="block py-2 px-4 text-sm text-gray-600 hover:bg-white/50 rounded-md transition-colors"
                   >
                     Page 1
                   </Link>
                   <Link 
-                    href="#page2" 
+                    to="#page2" 
                     onClick={closeMobileMenu}
                     className="block py-2 px-4 text-sm text-gray-600 hover:bg-white/50 rounded-md transition-colors"
                   >
                     Page 2
                   </Link>
                   <Link 
-                    href="#page3" 
+                    to="#page3" 
                     onClick={closeMobileMenu}
                     className="block py-2 px-4 text-sm text-gray-600 hover:bg-white/50 rounded-md transition-colors"
                   >
@@ -206,21 +205,21 @@ export default function ToulangNavbar() {
               {activeDropdown === 'blog' && (
                 <div className="mt-1 ml-4 space-y-1">
                   <Link 
-                    href="#latest" 
+                    to="#latest" 
                     onClick={closeMobileMenu}
                     className="block py-2 px-4 text-sm text-gray-600 hover:bg-white/50 rounded-md transition-colors"
                   >
                     Latest Posts
                   </Link>
                   <Link 
-                    href="#categories" 
+                    to="#categories" 
                     onClick={closeMobileMenu}
                     className="block py-2 px-4 text-sm text-gray-600 hover:bg-white/50 rounded-md transition-colors"
                   >
                     Categories
                   </Link>
                   <Link 
-                    href="#archive" 
+                    to="#archive" 
                     onClick={closeMobileMenu}
                     className="block py-2 px-4 text-sm text-gray-600 hover:bg-white/50 rounded-md transition-colors"
                   >
@@ -232,7 +231,7 @@ export default function ToulangNavbar() {
             
             <li>
               <Link 
-                href="/login" 
+                to="/login" 
                 onClick={closeMobileMenu}
                 className="block py-3 px-4 text-gray-700 font-medium text-base tracking-wider uppercase hover:bg-white/50 rounded-md transition-colors"
               >
@@ -242,7 +241,7 @@ export default function ToulangNavbar() {
             
             <li className="pt-4">
               <Link 
-                href="/register" 
+                to="/register" 
                 onClick={closeMobileMenu}
                 className="block text-center bg-gray-700 text-white px-6 py-3 rounded-md font-medium text-base tracking-wider uppercase hover:bg-gray-800 transition-colors"
               >
