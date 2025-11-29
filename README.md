@@ -1,4 +1,4 @@
-# Toulang Health Tracker - Comprehensive README
+# vitaltracking Health Tracker - Comprehensive README
 
 ## Project Overview
 
