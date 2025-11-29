@@ -29,15 +29,15 @@ export default function ToulangNavbar() {
 
         <ul className="hidden lg:flex gap-10 items-center">
           <li className="relative group">
-            <Link 
-              to="/" 
+            <Link
+              to="/"
               className="text-gray-700 font-medium text-sm tracking-wider uppercase hover:text-gray-900 transition-colors pb-1 block"
             >
               HOME
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gray-700 group-hover:w-full transition-all duration-300 ease-out"></span>
             </Link>
           </li>
-{/*           
+          {/*           
           <li className="relative">
             <button 
               onClick={() => toggleDropdown('page')}
@@ -59,7 +59,7 @@ export default function ToulangNavbar() {
               </div>
             )}
           </li> */}
-          
+
           {/* <li className="relative">
             <button 
               onClick={() => toggleDropdown('blog')}
@@ -81,11 +81,11 @@ export default function ToulangNavbar() {
               </div>
             )}
           </li> */}
-          
-       
 
-            <li className="relative group">
-            <Link to="/contact" 
+
+
+          <li className="relative group">
+            <Link to="/contact"
               className="text-gray-700 font-medium text-sm tracking-wider uppercase hover:text-gray-900 transition-colors pb-1 block"
             >
               CONTACT
@@ -93,9 +93,9 @@ export default function ToulangNavbar() {
             </Link>
           </li>
 
-               <li className="relative group">
-            <Link 
-              to="/about-us" 
+          <li className="relative group">
+            <Link
+              to="/about-us"
               className="text-gray-700 font-medium text-sm tracking-wider uppercase hover:text-gray-900 transition-colors pb-1 block"
             >
               ABOUT US
@@ -103,19 +103,19 @@ export default function ToulangNavbar() {
             </Link>
           </li>
 
-             <li className="relative group">
-            <Link 
-              to="/login" 
+          <li className="relative group">
+            <Link
+              to="/login"
               className="text-gray-700 font-medium text-sm tracking-wider uppercase hover:text-gray-900 transition-colors pb-1 block"
             >
               LOGIN
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gray-700 group-hover:w-full transition-all duration-300 ease-out"></span>
             </Link>
           </li>
-          
+
           <li>
-            <Link 
-              to="/register" 
+            <Link
+              to="/register"
               className="bg-gray-700 text-white px-6 py-2.5 rounded-md font-medium text-sm tracking-wider uppercase hover:bg-gray-800 transition-all hover:shadow-md"
             >
               REGISTER
@@ -124,7 +124,7 @@ export default function ToulangNavbar() {
         </ul>
 
         {/* Mobile Hamburger Button */}
-        <button 
+        <button
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           className="lg:hidden z-50 p-2 text-gray-700 hover:text-gray-900 transition-colors"
           aria-label="Toggle menu"
@@ -134,23 +134,22 @@ export default function ToulangNavbar() {
       </div>
 
       {/* Mobile Menu */}
-      <div 
-        className={`lg:hidden fixed inset-0 bg-[#e8e6e1] z-40 transition-transform duration-300 ease-in-out ${
-          mobileMenuOpen ? 'translate-x-0' : 'translate-x-full'
-        }`}
+      <div
+        className={`lg:hidden fixed inset-0 bg-[#e8e6e1] z-40 transition-transform duration-300 ease-in-out ${mobileMenuOpen ? 'translate-x-0' : 'translate-x-full'
+          }`}
       >
         <div className="pt-24 px-6 pb-6 overflow-y-auto h-full">
           <ul className="space-y-1">
             <li>
-              <Link 
-                to="/" 
+              <Link
+                to="/"
                 onClick={closeMobileMenu}
                 className="block py-3 px-4 text-gray-700 font-medium text-base tracking-wider uppercase hover:bg-white/50 rounded-md transition-colors"
               >
                 HOME
               </Link>
             </li>
-            
+
             {/* <li>
               <button 
                 onClick={() => toggleDropdown('page')}
@@ -230,38 +229,40 @@ export default function ToulangNavbar() {
             </li>
              */}
 
-             <li className="relative group">
-            <Link to="/contact" 
-              className="text-gray-700 font-medium text-sm tracking-wider uppercase hover:text-gray-900 transition-colors pb-1 block"
-            >
-              CONTACT
-              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gray-700 group-hover:w-full transition-all duration-300 ease-out"></span>
-            </Link>
-          </li>
+            <li className="relative group">
+              <Link to="/contact"
+                onClick={closeMobileMenu}
+                className="block py-3 px-4 text-gray-700 font-medium text-base tracking-wider uppercase hover:bg-white/50 rounded-md transition-colors"
+              >
+                CONTACT
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gray-700 group-hover:w-full transition-all duration-300 ease-out"></span>
+              </Link>
+            </li>
 
-               <li className="relative group">
-            <Link 
-              to="/about-us" 
-              className="text-gray-700 font-medium text-sm tracking-wider uppercase hover:text-gray-900 transition-colors pb-1 block"
-            >
-              ABOUT US
-              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gray-700 group-hover:w-full transition-all duration-300 ease-out"></span>
-            </Link>
-          </li>
+            <li className="relative group">
+              <Link
+                to="/about-us"
+                onClick={closeMobileMenu}
+                className="block py-3 px-4 text-gray-700 font-medium text-base tracking-wider uppercase hover:bg-white/50 rounded-md transition-colors"
+              >
+                ABOUT US
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gray-700 group-hover:w-full transition-all duration-300 ease-out"></span>
+              </Link>
+            </li>
 
             <li>
-              <Link 
-                to="/login" 
+              <Link
+                to="/login"
                 onClick={closeMobileMenu}
                 className="block py-3 px-4 text-gray-700 font-medium text-base tracking-wider uppercase hover:bg-white/50 rounded-md transition-colors"
               >
                 LOGIN
               </Link>
             </li>
-            
+
             <li className="pt-4">
-              <Link 
-                to="/register" 
+              <Link
+                to="/register"
                 onClick={closeMobileMenu}
                 className="block text-center bg-gray-700 text-white px-6 py-3 rounded-md font-medium text-base tracking-wider uppercase hover:bg-gray-800 transition-colors"
               >
