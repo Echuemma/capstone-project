@@ -43,33 +43,33 @@ export default function AboutUsPage() {
         { year: '2024', event: 'AI Integration', description: 'Launched intelligent insights and recommendations' }
     ];
 
-    const team = [
-        {
-            name: 'Dr. Sarah Mitchell',
-            role: 'Chief Medical Officer',
-            image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&q=80',
-            bio: 'Former healthcare director with 15 years experience in patient care'
-        },
-        {
-            name: 'Alex Chen',
-            role: 'Head of Product',
-            image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80',
-            bio: 'Tech innovator passionate about accessible health solutions'
-        },
-        {
-            name: 'Maria Garcia',
-            role: 'Lead Nutritionist',
-            image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&q=80',
-            bio: 'Certified nutritionist specializing in wellness optimization'
-        },
-        {
-            name: 'Echu Emmanuel',
-            role: 'CTO',
-            image: '/images/niceman.jpg',
-            // image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&q=80',
-            bio: 'Software architect with expertise in health tech platforms'
-        }
-    ];
+  const team = [
+  {
+    name: 'Dr. Aisha Bello',
+    role: 'Chief Medical Officer',
+    image: '/images/bello.jpg',
+    bio: 'Experienced medical practitioner with over 12 years in patient care and community health.'
+  },
+  {
+    name: 'Chinedu Okeke',
+    role: 'Head of Product',
+    image: '/images/chinedu.jpg',
+    bio: 'Product strategist focused on building innovative and accessible digital health solutions.'
+  },
+  {
+    name: 'Adaugo Nwosu',
+    role: 'Lead Nutritionist',
+    image: '/images/adaugo.jpg',
+    bio: 'Certified nutrition expert specializing in African diet wellness and lifestyle optimization.'
+  },
+  {
+    name: 'Echu Emmanuel',
+    role: 'CTO',
+    image: '/images/niceman.jpg',
+    bio: 'Software architect with hands-on experience building scalable and secure health tech platforms.'
+  }
+];
+
 
     return (
         <div className="min-h-screen bg-gray-50">

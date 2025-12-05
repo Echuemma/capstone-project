@@ -8,29 +8,30 @@ export default function TestimonialSection() {
   const [direction, setDirection] = useState('right');
   const [isAnimating, setIsAnimating] = useState(false);
 
-  const testimonials = [
-    {
-      id: 1,
-      text: "This health tracker has completely transformed how I manage my wellness journey. Being able to log all my therapy sessions and track my nutrition in one place has made staying consistent so much easier. Highly recommend!",
-      name: "Drew Feig",
-      role: "Platform User",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80"
-    },
-    {
-      id: 2,
-      text: "I love how intuitive and comprehensive this platform is. Tracking my progress toward my health goals has never been simpler. The analytics and insights help me stay motivated and make better decisions every day.",
-      name: "Sarah Johnson",
-      role: "Platform User",
-      image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&q=80"
-    },
-    {
-      id: 3,
-      text: "As someone managing multiple wellness programs, this tracker is a game-changer. I can see my entire health journey at a glance, set realistic goals, and celebrate my wins. It's become an essential part of my daily routine.",
-      name: "Michael Chen",
-      role: "Platform User",
-      image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&q=80"
-    }
-  ];
+ const testimonials = [
+  {
+    id: 1,
+    text: "This health tracker has really helped me stay on top of my wellness journey. Being able to log my workouts, monitor my meals, and track my progress in one place has made consistency so much easier. I honestly recommend it to anyone trying to stay healthy.",
+    name: "Emeka Okafor",
+    role: "Platform User",
+    image: "/images/okafor.jpg"
+  },
+  {
+    id: 2,
+    text: "I love how simple and user-friendly the platform is. Tracking my fitness goals and daily habits has never been this smooth. The insights really help me stay motivated and make better choices every day.",
+    name: "Amina Yusuf",
+    role: "Platform User",
+    image: "/images/amina.jpg"
+  },
+  {
+    id: 3,
+    text: "Managing my health used to be stressful, but this tracker has changed everything. I can see my progress clearly, set goals that make sense, and stay consistent. It has become part of my everyday routine.",
+    name: "Tunde Balogun",
+    role: "Platform User",
+    image: "/images/balogun.jpg"
+  }
+];
+
 
   // Auto-slide every 5 seconds
   useEffect(() => {

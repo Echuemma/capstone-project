@@ -1,5 +1,6 @@
 import React from 'react';
-import { Instagram, Twitter, Phone, MapPin, Mail,Facebook, Linkedin,  } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { Instagram, Twitter, Phone, MapPin, Mail, Facebook, Linkedin, } from 'lucide-react';
 
 export default function Footer() {
   return (
@@ -17,7 +18,7 @@ export default function Footer() {
             <div className="w-full h-px bg-gray-600"></div>
 
             <p className="text-gray-400 text-sm leading-relaxed">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibu
+              Provide a comprehensive platform that seamlessly integrates therapy tracking, nutrition monitoring, and goal management to support your complete wellness journey.
             </p>
 
             <div className="flex items-center gap-4">
@@ -66,11 +67,11 @@ export default function Footer() {
                   Services
                 </a>
               </li> */}
-              <li>
+              {/* <li>
                 <a href="contact" className="text-gray-400 hover:text-white transition-colors duration-300">
                   Contact
                 </a>
-              </li>
+              </li> */}
             </ul>
           </div>
 
@@ -78,25 +79,34 @@ export default function Footer() {
             <h3 className="text-xl font-bold">Support</h3>
             <ul className="space-y-3">
               <li>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors duration-300">
-                  Privacy Policy
-                </a>
+                <Link
+                  to="/contact"
+                  className="text-gray-400 hover:text-white transition-colors duration-300"
+                >
+                  Contact
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors duration-300">
-                  Terms & Conditions
-                </a>
+                <Link
+                  to="/register"
+                  className="text-gray-400 hover:text-white transition-colors duration-300"
+                >
+                  Registration
+                </Link>
               </li>
+
               <li>
-                <a href="#" className="text-gray-400 hover:text-white transition-colors duration-300">
-                  Disclaimer
-                </a>
+                <Link
+                  to="/login"
+                  className="text-gray-400 hover:text-white transition-colors duration-300"
+                >
+                  Login                </Link>
               </li>
-              <li>
+              {/* <li>
                 <a href="#" className="text-gray-400 hover:text-white transition-colors duration-300">
                   Faq
                 </a>
-              </li>
+              </li> */}
             </ul>
           </div>
 
